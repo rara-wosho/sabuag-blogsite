@@ -143,7 +143,7 @@ section {
   text-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
-.hero-main .sabuag-title{
+.hero-main .sabuag-title {
   font-size: 2.7rem !important;
 }
 
@@ -307,7 +307,7 @@ section#sabuag-banner::after {
   width: 100%;
   height: 100%;
   background-color: var(--ustp-primary-color);
-  opacity: .85;
+  opacity: 0.85;
   z-index: 1;
 }
 

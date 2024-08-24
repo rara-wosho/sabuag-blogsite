@@ -11,10 +11,10 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/article" element={<ArticlePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/sabuag-blogsite" element={<HomePage />} />
+        <Route path="/sabuag-blogsite/article" element={<ArticlePage />} />
+        <Route path="/sabuag-blogsite/about" element={<AboutPage />} />
+        <Route path="/sabuag-blogsite/admin" element={<AdminPage />} />
       </Routes>
     </>
   );

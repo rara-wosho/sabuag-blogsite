@@ -68,7 +68,7 @@ function Navbar() {
                   activeLink === "Home" ? "active" : ""
                 }`}
                 aria-current="page"
-                to="/"
+                to="/sabuag-blogsite"
                 onClick={() => handleActiveLink("Home")}
               >
                 HOME
@@ -80,7 +80,7 @@ function Navbar() {
                   activeLink === "about" ? "active" : ""
                 }`}
                 aria-current="page"
-                to="/about"
+                to="sabuag-blogsite/about"
                 onClick={() => handleActiveLink("about")}
               >
                 ABOUT US
@@ -91,7 +91,7 @@ function Navbar() {
                 className={`px-3 fw-semibold nav-link ${
                   activeLink === "contact" ? "active" : ""
                 }`}
-                href="#movielist-section"
+                href="#contact"
                 onClick={() => handleActiveLink("contact")}
               >
                 CONTACTS
