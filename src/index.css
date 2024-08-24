@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+:root {
+  --bg-body: rgb(239, 244, 253);
+  --bg-primary: ;
+  --bg-secondary: ;
+  --bg-transparent: ;
+  --bg-accent: rgb(26, 23, 82);
+
+  --txt-black: rgb(40, 40, 40);
+  --txt-gray: rgb(70, 70, 70);
+  --txt-white: rgb(220, 220, 220);
+  --txt-light-white: rgb(200, 200, 200);
+  --txt-accent: rgb(26, 23, 82);
+
+  --ustp-primary-color: rgb(26, 23, 82);
+  --ustp-secondary-color: #fcb315;
+  --ustp-secondary-color: #f5ab0c;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: var(--txt-black);
+}
+body {
+  background-color: var(--bg-body);
+}
+
+/* HOMEPAGE */
+
+/* NAVBAR */
+nav.navbar {
+  transition: all 0.3s;
+}
+nav.navbar.white-bg {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .navbar-brand {
+  color: var(--ustp-primary-color);
+  font-weight: 700 !important;
+}
+
+.nav-link {
+  letter-spacing: 1px;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+}
+
+.nav-link:focus {
+  box-shadow: none;
+}
+.nav-link.active {
+  color: var(--ustp-primary-color) !important;
+}
+/* .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: var(--ustp-primary-color);
+} */
+section {
+  padding-block: 3rem;
+}
+
+.hero-wrapper {
+  z-index: 5;
+}
+#hero-section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("public/images/image0.jpeg");
+  background-position: 50% 30%;
+  background-size: cover;
+  /* color: var(--txt-white); */
+}
+
+#hero-section .social-icons {
+  position: absolute;
+  bottom: 5rem;
+  z-index: 5;
+  gap: 8px;
+}
+
+#hero-section .social-icons i svg {
+  cursor: pointer;
+  opacity: 0.5;
+  margin-right: 8px;
+}
+
+#hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 244, 253, 0.75) 0%,
+    rgba(239, 244, 253, 0.95) 93%,
+    rgb(239, 244, 253) 100%
+  );
+  /* background: var(--bg-body); */
+  /* opacity: .9; */
+}
+
+.heading-text-upper {
+  position: relative;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+/* .heading-text-upper::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1.5px;
+  background-color: var(--ustp-secondary-color);
+  left: -60px;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+.heading-text-upper::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1.5px;
+  background-color: var(--ustp-primary-color);
+  right: -60px;
+  bottom: 50%;
+  transform: translateY(-50%);
+} */
+
+.hero-main h1 {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.hero-main .sabuag-title{
+  font-size: 2.7rem !important;
+}
+
+.section-title h2 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  z-index: 2;
+  background: var(--bg-accent);
+  transition: 0.3s ease-out;
+}
+
+.section-title:hover h2::after {
+  width: 100%;
+}
+
+/* BLOG CARD */
+.blog-card {
+  /* background: rgb(244, 251, 255); */
+  height: 100%;
+}
+
+.blog-card .img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  transition: 0.3s;
+}
+
+.blog-card .writer-image {
+  width: 30px;
+  height: 30px;
+}
+.blog-card:hover .img-container::after {
+  opacity: 0;
+}
+.blog-card .img-container {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.blog-card .img-container img {
+  transition: 0.4s;
+}
+.blog-card:hover .img-container img {
+  transform: scale(104%);
+}
+
+.blog-card .continue-reading {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.blogcard-title {
+  letter-spacing: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blogcard-desc .blog-text {
+  letter-spacing: 0.3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ARTICLE */
+/* .article-container {
+  height: 100vh;
+  background-image: url("public/images/image0.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  isolation: isolate;
+}
+
+.article-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 244, 253, 0.85) 0%,
+    rgba(239, 244, 253, 0.95) 87%,
+    rgb(239, 244, 253) 100%
+  );
+  z-index: -1;
+} */
+.article-wrapper {
+  max-width: 750px;
+}
+
+.article-title .title {
+  letter-spacing: 0.7px;
+}
+.article-text p {
+  line-height: 1.9rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 2.5rem;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.article-main-img:hover .article-swiper {
+  opacity: 1;
+}
+.article-swiper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.article-swiper i {
+  background: var(--txt-white);
+  cursor: pointer;
+}
+.article-swiper i svg {
+  width: 30px;
+  height: 30px;
+  stroke: var(--txt-gray);
+}
+
+/* ABOUT US PAGE */
+section#sabuag-banner {
+  min-height: 100vh;
+  width: 100%;
+  background-position: 50% 30%;
+  background-size: cover;
+  position: relative;
+}
+
+section#sabuag-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--ustp-primary-color);
+  opacity: .85;
+  z-index: 1;
+}
+
+#sabuag-banner .container {
+  z-index: 5;
+}
+.sabuag-logo-wrapper .sabuag-logo {
+  width: 400px;
+}
+
+/* SABUAG BOARD */
+section#sabuag-board {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* CONTACT FORM */
+
+.input-wrapper input,
+textarea {
+  background: rgba(0, 24, 68, 0.05);
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  border: 1.6px solid transparent;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.input-wrapper:hover input,
+.input-wrapper:hover textarea {
+  border: 1.6px solid var(--ustp-secondary-color);
+}
+input:focus,
+textarea:focus {
+  border: 1.6px solid var(--ustp-secondary-color);
+}
+.input-wrapper input::placeholder,
+textarea::placeholder {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* UTILITY CLASSES */
+
+.my-btn {
+  background: var(--ustp-secondary-color);
+}
+.clr-accent {
+  color: var(--txt-accent);
+}
+.clr-black {
+  color: var(--txt-black);
+}
+.clr-light-white {
+  color: var(--txt-light-white);
+}
+.clr-white {
+  color: var(--txt-white);
+}
+
+.fs-65 {
+  font-size: 0.94rem;
+}
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+.ustp-primary {
+  color: var(--ustp-primary-color);
+}
+
+.ustp-secondary {
+  color: var(--ustp-secondary-color);
+}
+
+.txt-serif {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Extra Large Devices (Desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+  /* Styles for screens smaller than 1200px */
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (max-width: 991.98px) {
+  /* Styles for screens smaller than 992px */
+  .hero-main .sabuag-title {
+    font-size: 3rem !important;
+  }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 767.98px) {
+}
+
+/* Extra Small Devices (Less than 576px) */
+@media (max-width: 575.98px) {
+  .hero-main .sabuag-title {
+    font-size: 2.5rem !important;
+  }
+}
