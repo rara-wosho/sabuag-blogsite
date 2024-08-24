@@ -68,7 +68,7 @@ function Navbar() {
                   activeLink === "Home" ? "active" : ""
                 }`}
                 aria-current="page"
-                to="/sabuag-blogsite"
+                to="/"
                 onClick={() => handleActiveLink("Home")}
               >
                 HOME
@@ -80,7 +80,7 @@ function Navbar() {
                   activeLink === "about" ? "active" : ""
                 }`}
                 aria-current="page"
-                to="sabuag-blogsite/about"
+                to="/about"
                 onClick={() => handleActiveLink("about")}
               >
                 ABOUT US

@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 
 function BlogCard({ main_image, blog_id, title, blog_text }) {
   return (
-    <Link to="/sabuag-blogsite/article" className="text-decoration-none">
+    <Link to="/article" className="text-decoration-none">
       <div className="blog-card rounded-4 overflow-hidden">
         <div className="img-container rounded-4 overflow-hidden position-relative mb-3">
           <img src={main_image} alt="" className="img-fluid" />
         </div>
         <div className="blogcard-body">
-          <div className="blogcard-title fw-semibold fs-4 mb-2 text-uppercase">{title}</div>
+          <div className="blogcard-title fw-semibold fs-4 mb-2 text-uppercase">
+            {title}
+          </div>
           <div className="blogcard-desc">
             <p className="text-secondary blog-text mb-3 fs-65">{blog_text}</p>
           </div>
