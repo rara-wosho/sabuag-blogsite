@@ -120,7 +120,8 @@ function Navbar() {
               </Link>
             </li>
             <li className="d-flex align-items-center nav-item">
-              <Link className="px-3 nav-link">
+              <Link className="px-3 nav-link" 
+              to="/signin">
                 <button className="btn btn-warning fw-semibold">Sign In</button>
               </Link>
             </li>

@@ -18,16 +18,17 @@ export default function SabuagBanner() {
                 Attainable Goals
               </h1>
               <p className="fs-5 text-light">
-                ”Journalism can never be silent: that is its greatest virtue and
-                its greatest fault.”
+                We are the official publication arm of USTP - Panaon,
+                dedicated to delivering the latest news, stories, and insights
+                about our school community. 
               </p>
             </div>
-            <div className="banner-middle mt-2">
+            {/* <div className="banner-middle mt-2">
               <div className="p-2 border bg-light rounded-2 d-flex align-items-center">
                 <p className="mb-0 pe-5 ps-3">Sabuag@gmail.com</p>
                 <button className="btn btn-warning">Contact Us</button>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col">
             <div className="d-none sabuag-logo-wrapper d-lg-flex align-items-center justify-content-center">
